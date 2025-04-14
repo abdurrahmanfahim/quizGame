@@ -1,901 +1,553 @@
-// 1. Basics – Fundamental JavaScript concepts
+// 1. jsBasicsQuiz – Fundamental concepts and general knowledge
 export const jsBasicsQuiz = [
   {
     question: "When was JavaScript first released?",
-    options: ["1995", "1996", "2000", "2005"],
+    options: ["2005", "1995", "2000", "1996"],
     answer: "1995"
   },
   {
     question: "What type of language is JavaScript?",
-    options: ["Interpreted", "Compiled", "Markup", "Database"],
+    options: ["Compiled", "Markup", "Interpreted", "Database"],
     answer: "Interpreted"
   },
   {
     question: "On which platforms can JavaScript be used?",
-    options: ["Web browsers", "Servers", "Desktop applications", "All of the above"],
+    options: ["Servers", "All of the above", "Web browsers", "Desktop applications"],
     answer: "All of the above"
   },
   {
-    question: "Which is the correct way to include JavaScript in an HTML document?",
-    options: [
-      "<script src='app.js'></script>",
-      "<js src='app.js'></js>",
-      "<link rel='script' href='app.js'>",
-      "<style src='app.js'></style>"
-    ],
+    question: "What is the correct way to include JavaScript in HTML?",
+    options: ["<link rel='script' href='app.js'>", "<script src='app.js'></script>", "<style src='app.js'></style>", "<js src='app.js'></js>"],
     answer: "<script src='app.js'></script>"
   },
   {
     question: "Is JavaScript a programming language?",
-    options: ["Yes", "No", "Neither", "Just a scripting language"],
+    options: ["Neither", "Yes", "Only a scripting language", "No"],
     answer: "Yes"
   },
   {
     question: "JavaScript does not control which of the following?",
-    options: ["Web page content", "User interface", "Server hardware", "Dynamic content"],
+    options: ["User interfaces", "Dynamic content", "Server hardware", "Web pages"],
     answer: "Server hardware"
   },
   {
     question: "JavaScript is never compiled:",
-    options: ["True", "False", "Depends on the context", "Absolutely"],
+    options: ["Depends", "False", "True", "Not applicable"],
     answer: "False"
   },
   {
-    question: "JavaScript is considered a _______ level language.",
-    options: ["Programming", "Markup", "Styling", "Sculpting"],
+    question: "JavaScript is a ______ language.",
+    options: ["Styling", "Programming", "Markup", "Sculpting"],
     answer: "Programming"
   },
   {
     question: "The primary use of JavaScript is:",
-    options: ["Web development", "Database management", "System programming", "Application development"],
+    options: ["System programming", "Web development", "Application development", "Database management"],
     answer: "Web development"
   },
   {
-    question: "JavaScript is regarded as a _______ level language.",
-    options: ["High-level", "Low-level", "Machine-level", "Assembly"],
+    question: "JavaScript is considered a ____ level language.",
+    options: ["Low-level", "High-level", "Assembly", "Machine-level"],
     answer: "High-level"
   }
 ];
 
 
-// 2. Variables & Scope – Variable declarations and scope concepts
+// 2. jsVariablesScopeQuiz – Variable declarations, scope, and related concepts
 export const jsVariablesScopeQuiz = [
   {
-    question: "Which keywords can be used to declare variables in JavaScript?",
-    options: ["var", "let", "const", "All of the above"],
+    question: "Which keywords can be used to declare a variable in JavaScript?",
+    options: ["const", "var", "All of the above", "let"],
     answer: "All of the above"
   },
   {
-    question: "Which keyword does not create block scope?",
-    options: ["var", "let", "const", "Both let and const"],
+    question: "Which keyword does NOT create block scope?",
+    options: ["let", "Both let and const", "var", "const"],
     answer: "var"
   },
   {
-    question: "What does the term 'scope' refer to in JavaScript?",
-    options: [
-      "A code block where variables are accessible",
-      "The filename",
-      "Server location",
-      "Software version"
-    ],
-    answer: "A code block where variables are accessible"
+    question: "What does 'scope' refer to?",
+    options: ["Software version", "The region in the code where a variable is accessible", "The file name", "The server location"],
+    answer: "The region in the code where a variable is accessible"
   },
   {
-    question: "Where can a globally scoped variable be accessed?",
-    options: ["Everywhere", "Inside a function only", "Only within a block", "Only within a module"],
+    question: "Where is a global variable accessible?",
+    options: ["Only inside a function", "Everywhere", "Only in a module", "Only in a block"],
     answer: "Everywhere"
   },
   {
-    question: "Block scope is applicable to which keywords?",
-    options: ["let and const", "var", "function", "class"],
+    question: "Block scope applies only to which keywords?",
+    options: ["class", "var", "let and const", "function"],
     answer: "let and const"
   },
   {
     question: "What is hoisting in JavaScript?",
-    options: [
-      "The lifting of variable and function declarations to the top",
-      "Code reset",
-      "Data storage",
-      "Event handling"
-    ],
-    answer: "The lifting of variable and function declarations to the top"
+    options: ["Code is reset", "Variable and function declarations are moved to the top of their scope", "Event handling occurs", "Data is stored"],
+    answer: "Variable and function declarations are moved to the top of their scope"
   },
   {
-    question: "Where can a function-scoped variable be accessed?",
-    options: [
-      "Only within that function",
-      "Everywhere in the script",
-      "Only globally",
-      "Inside an HTML file"
-    ],
-    answer: "Only within that function"
+    question: "Where is a function-scoped variable accessible?",
+    options: ["Only within the function", "Throughout the script", "In the HTML file", "Only in the global scope"],
+    answer: "Only within the function"
   },
   {
     question: "What is variable shadowing?",
-    options: [
-      "Having variables with the same name in different scopes",
-      "Deleting a variable",
-      "Encrypting a variable",
-      "Copying a variable"
-    ],
-    answer: "Having variables with the same name in different scopes"
+    options: ["Copying a variable", "Having the same variable name in different scopes", "Encrypting a variable", "Deleting a variable"],
+    answer: "Having the same variable name in different scopes"
   },
   {
     question: "Is a variable declared with const mutable?",
-    options: ["No", "Yes", "Depends on the context", "Only for objects"],
+    options: ["Depends on the situation", "Only for objects", "No", "Yes"],
     answer: "No"
   },
   {
-    question: "In JavaScript, is the default value of an uninitialized variable undefined?",
-    options: ["Yes", "No", "Only with let", "Only with var"],
+    question: "Are variables declared without initialization default to undefined?",
+    options: ["Only with let", "Yes", "No", "Only with var"],
     answer: "Yes"
   }
 ];
 
 
-// 3. Functions & Arrow Functions – Function declarations, expressions, and arrow functions
+// 3. jsFunctionsQuiz – Function declarations, expressions, and arrow functions
 export const jsFunctionsQuiz = [
   {
     question: "How do you declare a function in JavaScript?",
-    options: [
-      "function myFunc() {}",
-      "var myFunc = () => {}",
-      "Both",
-      "None"
-    ],
-    answer: "Both"
+    options: ["var myFunc = () => {}", "Both of the above", "function myFunc() {}", "None of the above"],
+    answer: "Both of the above"
   },
   {
-    question: "Which of the following is a correct example of an Immediately Invoked Function Expression (IIFE)?",
-    options: [
-      "(function(){})();",
-      "function(){})();",
-      "myFunc(){}();",
-      "(()=>{})()"
-    ],
+    question: "What is the correct example of an Immediately Invoked Function Expression (IIFE)?",
+    options: ["(()=>{})()", "(function(){})();", "myFunc(){}();", "function(){})();"],
     answer: "(function(){})();"
   },
   {
     question: "What is the main characteristic of an arrow function?",
-    options: [
-      "It behaves exactly like a normal function",
-      "It has a different 'this' binding",
-      "It is circular in nature",
-      "None of the above"
-    ],
+    options: ["None of the above", "It has a different 'this' binding", "It behaves the same as a regular function", "It is a circular function"],
     answer: "It has a different 'this' binding"
   },
   {
     question: "When are default parameters used in a function?",
-    options: [
-      "When an argument is not provided",
-      "Always",
-      "Only in arrow functions",
-      "Never"
-    ],
+    options: ["Only in arrow functions", "When an argument is not provided", "Never", "Always"],
     answer: "When an argument is not provided"
   },
   {
-    question: "What is the difference between function expressions and function declarations?",
-    options: [
-      "In terms of hoisting",
-      "Syntax differences",
-      "There is no difference",
-      "Not noticeable"
-    ],
-    answer: "In terms of hoisting"
+    question: "What is the main difference between function expressions and function declarations?",
+    options: ["There is no difference", "Syntax", "Hoisting behavior", "It is not noticeable"],
+    answer: "Hoisting behavior"
   },
   {
-    question: "What does a higher-order function refer to?",
-    options: [
-      "A function that takes another function as an argument",
-      "A function that multiplies numbers",
-      "A function that works only with strings",
-      "A function that is erroneous"
-    ],
+    question: "What is a higher-order function?",
+    options: ["A function that only works with strings", "A function that takes another function as an argument", "A function that multiplies numbers", "A faulty function"],
     answer: "A function that takes another function as an argument"
   },
   {
-    question: "In which scenario is a callback function most commonly used?",
-    options: [
-      "In asynchronous operations",
-      "In synchronous operations",
-      "Inside loops",
-      "Within classes"
-    ],
-    answer: "In asynchronous operations"
+    question: "In which case is a callback function mostly used?",
+    options: ["Within loops", "For asynchronous operations", "Inside classes", "For synchronous operations"],
+    answer: "For asynchronous operations"
   },
   {
     question: "How is 'this' determined in an arrow function?",
-    options: [
-      "By its lexical context",
-      "By its dynamic context",
-      "By the window object",
-      "It is undefined"
-    ],
-    answer: "By its lexical context"
+    options: ["Based on the lexical context", "Undefined", "Dynamically based on call-site", "Always the window object"],
+    answer: "Based on the lexical context"
   },
   {
-    question: "How do you declare rest parameters?",
-    options: [
-      "...args",
-      "args...",
-      "rest args",
-      "args rest"
-    ],
+    question: "How do you declare a rest parameter in a function?",
+    options: ["rest args", "...args", "args rest", "args..."],
     answer: "...args"
   },
   {
     question: "What does function currying mean?",
-    options: [
-      "Combining multiple functions into one",
-      "Splitting a function into smaller functions based on arguments",
-      "Using the same function repeatedly",
-      "Returning a function"
-    ],
-    answer: "Splitting a function into smaller functions based on arguments"
+    options: ["Returning a function", "Splitting a function into a series of functions based on arguments", "Using the same function repeatedly", "Combining multiple functions into one"],
+    answer: "Splitting a function into a series of functions based on arguments"
   }
 ];
 
 
-// 4. ES6 Features – New features introduced in ES6 (Template literals, destructuring, etc.)
+// 4. jsES6Quiz – New features in ECMAScript 6 and beyond
 export const jsES6Quiz = [
   {
-    question: "Which new keywords were introduced in ES6?",
-    options: ["let", "var", "const", "Both let & const"],
-    answer: "Both let & const"
+    question: "Which of the following keywords is new in ES6?",
+    options: ["var", "const", "Both let and const", "let"],
+    answer: "Both let and const"
   },
   {
-    question: "Which symbol is used for template literals?",
-    options: ["``", "\"\"", "''", "%%"],
+    question: "Template literals are enclosed within which characters?",
+    options: ["''", "``", "%%", "\"\""],
     answer: "``"
   },
   {
-    question: "What does destructuring help simplify?",
-    options: [
-      "Extracting values from objects",
-      "Resetting function outputs",
-      "Declaring variables",
-      "Looping through arrays"
-    ],
-    answer: "Extracting values from objects"
+    question: "Destructuring makes it easier to:",
+    options: ["Loop through arrays", "Extract values from objects", "Reset values", "Declare variables"],
+    answer: "Extract values from objects"
   },
   {
     question: "What is the correct syntax for the spread operator?",
-    options: ["...", "+++", "///", "&&&"],
+    options: ["+++", "///", "&&&", "..."],
     answer: "..."
   },
   {
-    question: "Which keyword is omitted in the concise syntax of arrow functions?",
-    options: ["function", "return", "=>", "Both function and return"],
+    question: "Which keyword is omitted in the concise syntax of an arrow function?",
+    options: ["=>", "return", "Both function and return", "function"],
     answer: "function"
   },
   {
-    question: "What is achieved with import/export statements in ES6?",
-    options: [
-      "Module management",
-      "DOM manipulation",
-      "Loading style sheets",
-      "Memory storage"
-    ],
+    question: "What is the purpose of using import/export in ES6?",
+    options: ["Memory storage", "Module management", "DOM manipulation", "Loading stylesheets"],
     answer: "Module management"
   },
   {
     question: "How do you declare a class in ES6?",
-    options: [
-      "class MyClass {}",
-      "function MyClass() {}",
-      "var MyClass = {}",
-      "MyClass() => {}"
-    ],
+    options: ["MyClass() => {}", "class MyClass {}", "var MyClass = {}", "function MyClass() {}"],
     answer: "class MyClass {}"
   },
   {
     question: "How can you set a default parameter value in a function?",
-    options: [
-      "function f(x = 10) {}",
-      "function f(x : 10) {}",
-      "function f(x = '10') {}",
-      "function f(x default=10) {}"
-    ],
+    options: ["function f(x : 10) {}", "function f(x default=10) {}", "function f(x = '10') {}", "function f(x = 10) {}"],
     answer: "function f(x = 10) {}"
   },
   {
-    question: "What is the difference between an iterator and a generator?",
-    options: [
-      "The iterator is itself iterable, whereas a generator is a special kind of function",
-      "The generator is iterable, whereas an iterator is a function",
-      "There is no difference",
-      "Both are the same"
-    ],
-    answer: "The iterator is itself iterable, whereas a generator is a special kind of function"
+    question: "What is the difference between an Iterator and a Generator?",
+    options: ["There is no difference", "A Generator is iterable, while an Iterator is a function", "An Iterator is iterable, while a Generator is a function that produces an iterator", "They are the same"],
+    answer: "An Iterator is iterable, while a Generator is a function that produces an iterator"
   },
   {
-    question: "Which of the following is considered an advanced feature in ES6?",
-    options: ["Modules", "Callbacks", "Event Loop", "AJAX"],
+    question: "Which ES6 feature is primarily used for better module management?",
+    options: ["AJAX", "Callbacks", "Modules", "Event Loop"],
     answer: "Modules"
   }
 ];
 
 
-// 5. Asynchronous JavaScript – Promises, async/await, callbacks, etc.
+// 5. jsAsyncQuiz – Handling asynchronous operations: Promises, async/await, Callbacks
 export const jsAsyncQuiz = [
   {
     question: "What is a Promise in JavaScript?",
-    options: [
-      "An asynchronous operation",
-      "A synchronous operation",
-      "A loop",
-      "An event"
-    ],
+    options: ["A loop", "An event", "A synchronous operation", "An asynchronous operation"],
     answer: "An asynchronous operation"
   },
   {
     question: "What is the primary purpose of an async function?",
-    options: [
-      "To convert synchronous code to asynchronous",
-      "To speed up code execution",
-      "For DOM manipulation",
-      "For variable creation"
-    ],
+    options: ["To create new variables", "For DOM manipulation", "To convert synchronous code to asynchronous", "To speed up code execution"],
     answer: "To convert synchronous code to asynchronous"
   },
   {
-    question: "How does the await keyword work?",
-    options: [
-      "It pauses code execution until a Promise is resolved",
-      "It returns the result immediately",
-      "It resets the code",
-      "It does nothing"
-    ],
-    answer: "It pauses code execution until a Promise is resolved"
+    question: "How does the 'await' keyword work?",
+    options: ["It resets the code", "It returns the result immediately", "It does nothing", "It pauses execution until the Promise is resolved"],
+    answer: "It pauses execution until the Promise is resolved"
   },
   {
     question: "What is a callback function?",
-    options: [
-      "A function provided as an argument to another function",
-      "A new function declaration",
-      "A variable incrementation",
-      "A DOM loading method"
-    ],
-    answer: "A function provided as an argument to another function"
+    options: ["Variable incrementation", "A function passed as an argument to another function", "DOM loading", "A newly declared function"],
+    answer: "A function passed as an argument to another function"
   },
   {
     question: "What is the benefit of promise chaining?",
-    options: [
-      "Executing multiple asynchronous operations in sequence",
-      "Speeding up synchronous operations",
-      "Loop execution",
-      "DOM updates"
-    ],
-    answer: "Executing multiple asynchronous operations in sequence"
+    options: ["For loop processing", "To execute multiple asynchronous operations sequentially", "For DOM updates", "To speed up synchronous operations"],
+    answer: "To execute multiple asynchronous operations sequentially"
   },
   {
     question: "Which method is used for error handling in Promises?",
-    options: ["catch()", "try()", "error()", "finally()"],
+    options: ["finally()", "catch()", "error()", "try()"],
     answer: "catch()"
   },
   {
     question: "Asynchronous programming is also known as:",
-    options: ["Non-blocking", "Threaded", "Synchronous", "Blocking"],
+    options: ["Synchronous", "Non-blocking", "Blocking", "Threaded"],
     answer: "Non-blocking"
   },
   {
-    question: "What is the role of the event loop?",
-    options: [
-      "Coordinating the call stack and callback queue",
-      "Emptying the call stack only",
-      "Updating the DOM",
-      "Executing synchronous operations"
-    ],
-    answer: "Coordinating the call stack and callback queue"
+    question: "What is the role of the event loop in JavaScript?",
+    options: ["To update the DOM", "To execute synchronous operations", "To clear the call stack", "To coordinate the call stack and callback queue"],
+    answer: "To coordinate the call stack and callback queue"
   },
   {
-    question: "What does setTimeout() do?",
-    options: [
-      "Executes code after a specified time delay",
-      "Executes code immediately",
-      "Declares variables",
-      "Modifies the DOM"
-    ],
-    answer: "Executes code after a specified time delay"
+    question: "What is the purpose of the setTimeout() function?",
+    options: ["To modify the DOM", "To declare variables", "To execute code immediately", "To execute code after a specified time interval"],
+    answer: "To execute code after a specified time interval"
   },
   {
     question: "What are the three states of a Promise?",
-    options: [
-      "Pending, Fulfilled, Rejected",
-      "Started, Running, Ended",
-      "Initialized, In Progress, Completed",
-      "None of these"
-    ],
+    options: ["Initialized, In Progress, Completed", "Pending, Fulfilled, Rejected", "Started, Running, Ended", "None of these"],
     answer: "Pending, Fulfilled, Rejected"
   }
 ];
 
 
-// 6. DOM & Events – Document Object Model and event handling
+// 6. jsDomEventsQuiz – Working with the Document Object Model and event handling
 export const jsDomEventsQuiz = [
   {
     question: "What does DOM stand for?",
-    options: [
-      "Document Object Model",
-      "Data Object Model",
-      "Digital Object Model",
-      "Desktop Object Model"
-    ],
+    options: ["Desktop Object Model", "Digital Object Model", "Document Object Model", "Data Object Model"],
     answer: "Document Object Model"
   },
   {
     question: "How can you select an HTML element using JavaScript?",
-    options: [
-      "document.getElementById()",
-      "document.querySelector()",
-      "Both",
-      "None"
-    ],
-    answer: "Both"
+    options: ["document.querySelector()", "None of the above", "document.getElementById()", "Both of the above"],
+    answer: "Both of the above"
   },
   {
     question: "What is event bubbling?",
-    options: [
-      "The propagation of events upward through the DOM",
-      "Stopping an event",
-      "Accelerating an event",
-      "Resetting an event"
-    ],
-    answer: "The propagation of events upward through the DOM"
+    options: ["Resetting an event", "The process where an event propagates upward through the DOM", "Increasing the event speed", "Stopping an event"],
+    answer: "The process where an event propagates upward through the DOM"
   },
   {
     question: "What does event capturing mean?",
-    options: [
-      "Events are captured from the outer nodes first",
-      "Events start from the last node",
-      "Events are halted",
-      "None of the above"
-    ],
-    answer: "Events are captured from the outer nodes first"
+    options: ["An event starts from the target and goes outward", "None of the above", "An event is captured from the ancestor nodes before reaching the target", "The event is stopped"],
+    answer: "An event is captured from the ancestor nodes before reaching the target"
   },
   {
     question: "What is the correct syntax for addEventListener()?",
-    options: [
-      "element.addEventListener('click', function() {})",
-      "element.onClick('click', function() {})",
-      "addEventListener(element, 'click', function() {})",
-      "element.addListener('click', function() {})"
-    ],
+    options: ["addEventListener(element, 'click', function() {})", "element.addListener('click', function() {})", "element.addEventListener('click', function() {})", "element.onClick('click', function() {})"],
     answer: "element.addEventListener('click', function() {})"
   },
   {
     question: "What is event delegation?",
-    options: [
-      "Attaching a single event handler to a parent element to handle events from its children",
-      "Adding separate events to each element",
-      "Stopping events entirely",
-      "None of the above"
-    ],
-    answer: "Attaching a single event handler to a parent element to handle events from its children"
+    options: ["Attaching individual event handlers to each element", "Attaching a single event handler to a parent element to manage events for its children", "Disabling events", "None of the above"],
+    answer: "Attaching a single event handler to a parent element to manage events for its children"
   },
   {
-    question: "What does the DOMContentLoaded event signify?",
-    options: [
-      "The HTML document has been completely loaded",
-      "CSS files have loaded",
-      "JavaScript has loaded first",
-      "No event"
-    ],
-    answer: "The HTML document has been completely loaded"
+    question: "What does the DOMContentLoaded event indicate?",
+    options: ["JavaScript has loaded first", "None of the above", "CSS files have been loaded", "The HTML document has been fully loaded"],
+    answer: "The HTML document has been fully loaded"
   },
   {
-    question: "Which event is most appropriate for user interaction?",
-    options: ["click", "load", "scroll", "resize"],
+    question: "Which event is best suited for UI interactions?",
+    options: ["resize", "scroll", "click", "load"],
     answer: "click"
   },
   {
-    question: "What does event.preventDefault() do?",
-    options: [
-      "Stops the default action of an event",
-      "Logs the event",
-      "Triggers the event",
-      "Deletes the event"
-    ],
-    answer: "Stops the default action of an event"
+    question: "What is the purpose of Event.preventDefault()?",
+    options: ["To log the event", "To delete the event", "To trigger the event", "To prevent the default action associated with the event"],
+    answer: "To prevent the default action associated with the event"
   },
   {
-    question: "What does stopPropagation() do?",
-    options: [
-      "Stops event bubbling",
-      "Initiates an event",
-      "Resets event data",
-      "None of the above"
-    ],
-    answer: "Stops event bubbling"
+    question: "What does the stopPropagation() method do?",
+    options: ["Starts an event", "Resets event data", "None of the above", "Stops the event from bubbling up"],
+    answer: "Stops the event from bubbling up"
   }
 ];
 
 
-// 7. Operators & Comparisons – Operators and comparisons in JavaScript
+// 7. jsOperatorsQuiz – Operators, ternary expressions, and type comparisons
 export const jsOperatorsQuiz = [
   {
     question: "Which operator checks both type and value?",
-    options: ["==", "===", "=", "!="],
+    options: ["!=", "==", "===", "="],
     answer: "==="
   },
   {
     question: "Which operator indicates inequality?",
-    options: ["!=", "!==", "not =", "All of the above"],
+    options: ["not =", "!==", "All of the above", "!="],
     answer: "!=="
   },
   {
     question: "What is the correct syntax for the ternary operator?",
-    options: [
-      "condition ? expr1 : expr2",
-      "condition : expr1 ? expr2",
-      "expr1 ? condition : expr2",
-      "condition ? : expr2"
-    ],
+    options: ["expr1 ? condition : expr2", "condition ? : expr2", "condition ? expr1 : expr2", "condition : expr1 ? expr2"],
     answer: "condition ? expr1 : expr2"
   },
   {
-    question: "Which symbol represents the logical AND operator?",
-    options: ["&&", "||", "!!", "##"],
+    question: "Which operator represents Logical AND?",
+    options: ["!!", "##", "&&", "||"],
     answer: "&&"
   },
   {
-    question: "Which symbol represents the logical OR operator?",
-    options: ["||", "&&", "!!", "%%"],
+    question: "Which operator represents Logical OR?",
+    options: ["&&", "%%", "||", "!!"],
     answer: "||"
   },
   {
     question: "Which of the following is an example of the increment operator?",
-    options: ["i++", "++i", "i += 1", "All of the above"],
+    options: ["++i", "i += 1", "All of the above", "i++"],
     answer: "All of the above"
   },
   {
     question: "Which of the following is an example of the decrement operator?",
-    options: ["i--", "--i", "i -= 1", "All of the above"],
+    options: ["i--", "All of the above", "i -= 1", "--i"],
     answer: "All of the above"
   },
   {
-    question: "Which operator is used as the bitwise AND?",
-    options: ["&", "&&", "|", "||"],
+    question: "Which is the Bitwise AND operator?",
+    options: ["&", "|", "&&", "||"],
     answer: "&"
   },
   {
     question: "What does the equality operator '==' check?",
-    options: [
-      "Only value",
-      "Only type",
-      "Both value and type",
-      "None"
-    ],
-    answer: "Only value"
+    options: ["It checks both value and type", "None of the above", "It checks value only", "It checks type only"],
+    answer: "It checks value only"
   },
   {
-    question: "What does the typeof operator return?",
-    options: [
-      "The data type of a variable",
-      "The value of a variable",
-      "The name of a variable",
-      "None"
-    ],
+    question: "What does the typeof operator determine?",
+    options: ["None of the above", "The value of a variable", "The name of a variable", "The data type of a variable"],
     answer: "The data type of a variable"
   }
 ];
 
 
-// 8. Objects & Arrays – Techniques for using objects and arrays
+// 8. jsObjectsArraysQuiz – Working with objects and arrays
 export const jsObjectsArraysQuiz = [
   {
     question: "What is an object literal?",
-    options: [
-      "A collection of key-value pairs",
-      "An array-like structure",
-      "A list of strings",
-      "Similar to a set"
-    ],
+    options: ["A list of strings", "A collection of key-value pairs", "Similar to an array", "Like a set"],
     answer: "A collection of key-value pairs"
   },
   {
-    question: "How do you access values from an object?",
-    options: [
-      "Using both dot notation and bracket notation",
-      "Only dot notation",
-      "Only bracket notation",
-      "There is no way"
-    ],
+    question: "How do you access a value from an object?",
+    options: ["Using only bracket notation", "There's no way", "Using both dot notation and bracket notation", "Using only dot notation"],
     answer: "Using both dot notation and bracket notation"
   },
   {
     question: "What does Array.push() do?",
-    options: [
-      "Adds a new item",
-      "Removes an item",
-      "Finds an item",
-      "Updates an item"
-    ],
-    answer: "Adds a new item"
+    options: ["Removes an item", "Adds a new item to the array", "Updates an item", "Searches for an item"],
+    answer: "Adds a new item to the array"
   },
   {
     question: "What does Array.pop() do?",
-    options: [
-      "Removes the last item",
-      "Removes the first item",
-      "Removes an item from the middle",
-      "Adds an item"
-    ],
-    answer: "Removes the last item"
+    options: ["Adds an item", "Removes the first item", "Removes the last item from the array", "Removes an item from the middle"],
+    answer: "Removes the last item from the array"
   },
   {
-    question: "What is the purpose of the forEach() method?",
-    options: [
-      "To perform an operation on each element of an array",
-      "To create a new array",
-      "To filter an array",
-      "To sort an array"
-    ],
-    answer: "To perform an operation on each element of an array"
+    question: "What does the forEach() method do?",
+    options: ["Creates a new array", "Executes a provided function on each element of the array", "Filters the array", "Sorts the array"],
+    answer: "Executes a provided function on each element of the array"
   },
   {
-    question: "What does the map() method do?",
-    options: [
-      "Applies a function to each element and returns a new array",
-      "Removes all elements",
-      "Updates the array",
-      "Filters the array"
-    ],
-    answer: "Applies a function to each element and returns a new array"
+    question: "What is the usage of the map() method?",
+    options: ["Updates the array", "Removes all elements", "Filters the array", "Applies a function on every element and returns a new array"],
+    answer: "Applies a function on every element and returns a new array"
   },
   {
-    question: "What does Object.keys() return?",
-    options: [
-      "An array of all the keys in an object",
-      "The values of the object",
-      "A duplicate of the object",
-      "Nothing"
-    ],
-    answer: "An array of all the keys in an object"
+    question: "What does Object.keys() do?",
+    options: ["Duplicates an object", "Returns an array of an object's keys", "Does nothing", "Returns the object's values"],
+    answer: "Returns an array of an object's keys"
   },
   {
     question: "What is the purpose of Array.filter()?",
-    options: [
-      "To find elements that match a condition",
-      "To add all elements",
-      "To remove the last element",
-      "To create an object"
-    ],
-    answer: "To find elements that match a condition"
+    options: ["To create an object", "To extract elements that satisfy a certain condition", "To add up all elements", "To remove the last element"],
+    answer: "To extract elements that satisfy a certain condition"
   },
   {
-    question: "Which data structures can be easily destructured using destructuring assignment?",
-    options: [
-      "Both objects and arrays",
-      "Only objects",
-      "Only arrays",
-      "None"
-    ],
+    question: "What data types can be destructured?",
+    options: ["Only arrays", "Both objects and arrays", "None", "Only objects"],
     answer: "Both objects and arrays"
   },
   {
-    question: "What does the spread operator do?",
-    options: [
-      "Clones and merges objects/arrays",
-      "Filters an array",
-      "Deletes an object",
-      "None"
-    ],
-    answer: "Clones and merges objects/arrays"
+    question: "What can you do with the Spread operator?",
+    options: ["Filter arrays", "Delete an object", "Clone and merge objects/arrays", "None of the above"],
+    answer: "Clone and merge objects/arrays"
   }
 ];
 
 
-// 9. Advanced Concepts – Closures, prototypes, promises, etc.
+// 9. jsAdvancedQuiz – Topics like closures, prototypes, and more
 export const jsAdvancedQuiz = [
   {
-    question: "What is a closure?",
-    options: [
-      "A function defined inside another function that accesses external variables",
-      "A type of object",
-      "An asynchronous operation",
-      "Function hoisting"
-    ],
-    answer: "A function defined inside another function that accesses external variables"
+    question: "What is a closure in JavaScript?",
+    options: ["Function hoisting", "A function defined inside another function that accesses the outer function's variables", "A type of object", "An asynchronous operation"],
+    answer: "A function defined inside another function that accesses the outer function's variables"
   },
   {
-    question: "What is prototypal inheritance used for?",
-    options: [
-      "To inherit properties and methods from another object",
-      "To create new functions",
-      "To reset variables",
-      "To update the DOM"
-    ],
-    answer: "To inherit properties and methods from another object"
+    question: "What does prototypal inheritance achieve?",
+    options: ["Creates new functions", "Allows objects to inherit properties and methods from their prototype", "Updates the DOM", "Resets variables"],
+    answer: "Allows objects to inherit properties and methods from their prototype"
   },
   {
     question: "Why is closure often used in an IIFE?",
-    options: [
-      "To protect data from the global scope",
-      "To speed up the code",
-      "To reduce the number of variables",
-      "To store data"
-    ],
-    answer: "To protect data from the global scope"
+    options: ["To store data", "To reduce the number of variables", "To protect data from the external scope", "To speed up code execution"],
+    answer: "To protect data from the external scope"
   },
   {
     question: "What does currying do?",
-    options: [
-      "Transforms a function into a sequence of functions based on arguments",
-      "Combines multiple functions",
-      "Filters data",
-      "None of these"
-    ],
-    answer: "Transforms a function into a sequence of functions based on arguments"
+    options: ["Filters data", "Transforms a function into a series of functions based on its arguments", "Combines many functions into one", "None of the above"],
+    answer: "Transforms a function into a series of functions based on its arguments"
   },
   {
     question: "What is the benefit of function memoization?",
-    options: [
-      "Reusing previously calculated results",
-      "Creating new functions",
-      "Synchronous operations",
-      "Event handling"
-    ],
-    answer: "Reusing previously calculated results"
+    options: ["Handles events", "Creates new functions", "Reuses the results of expensive function calls", "Enables synchronous operation"],
+    answer: "Reuses the results of expensive function calls"
   },
   {
-    question: "What is the purpose of call(), apply(), and bind() methods?",
-    options: [
-      "To control the 'this' context and invoke functions",
-      "To declare variables",
-      "For asynchronous operations",
-      "None of the above"
-    ],
-    answer: "To control the 'this' context and invoke functions"
+    question: "What is the functionality of call(), apply(), and bind()?",
+    options: ["They handle asynchronous operations", "None of the above", "They control the 'this' context and function invocation", "They declare variables"],
+    answer: "They control the 'this' context and function invocation"
   },
   {
-    question: "What is the purpose of strict mode?",
-    options: [
-      "It enforces stricter parsing and error handling in your code",
-      "It speeds up code execution",
-      "It updates the DOM",
-      "It deletes variables"
-    ],
+    question: "What is the purpose of 'use strict'?",
+    options: ["It updates the DOM", "It deletes variables", "It enforces stricter parsing and error handling in your code", "It speeds up code execution"],
     answer: "It enforces stricter parsing and error handling in your code"
   },
   {
     question: "What is the relationship between the event loop and the call stack?",
-    options: [
-      "They regulate each other",
-      "The call stack is managed by the event loop",
-      "The call stack drives the event loop",
-      "There is no relationship"
-    ],
+    options: ["There is no relationship", "They regulate each other", "The event loop outsources the call stack", "The call stack is derived from the event loop"],
     answer: "They regulate each other"
   },
   {
     question: "How does garbage collection work in JavaScript?",
-    options: [
-      "It frees up unused memory",
-      "It stores data",
-      "It calls functions",
-      "It updates data"
-    ],
-    answer: "It frees up unused memory"
+    options: ["It calls functions", "It updates data", "It frees up memory that is no longer needed", "It stores data"],
+    answer: "It frees up memory that is no longer needed"
   },
   {
-    question: "What is the main purpose of the decorator pattern?",
-    options: [
-      "Dynamically modifying the behavior of a function or object",
-      "Creating new functions",
-      "Encrypting code",
-      "Resetting variables"
-    ],
-    answer: "Dynamically modifying the behavior of a function or object"
+    question: "What is essentially done in the Decorator pattern?",
+    options: ["Creates new functions", "Encrypts code", "Resets variables", "Dynamically modifies the behavior of a function or object"],
+    answer: "Dynamically modifies the behavior of a function or object"
   }
 ];
 
 
-// 10. Interview Questions – Intermediate to advanced level interview questions
+// 10. jsInterviewQuiz – Intermediate and advanced level questions for interviews
 export const jsInterviewQuiz = [
   {
     question: "Explain the event loop in JavaScript.",
-    options: [
-      "It is a mechanism that handles asynchronous callbacks",
-      "It is used to load external scripts",
-      "It manages memory allocation",
-      "It is used for DOM manipulation"
-    ],
+    options: ["It manages memory allocation", "It is used for DOM manipulation", "It is used to load external scripts", "It is a mechanism that handles asynchronous callbacks"],
     answer: "It is a mechanism that handles asynchronous callbacks"
   },
   {
     question: "What is the difference between '==' and '===' in JavaScript?",
-    options: [
-      "'==' checks value only, while '===' checks both value and type",
-      "'===' checks value only, while '==' checks both",
-      "There is no difference",
-      "They are used for different data types"
-    ],
-    answer: "'==' checks value only, while '===' checks both value and type"
+    options: ["They are used for different data types", "'==' checks only the value, while '===' checks both value and type", "There is no difference", "'===' checks only the value, while '==' checks both"],
+    answer: "'==' checks only the value, while '===' checks both value and type"
   },
   {
     question: "How does prototypal inheritance work in JavaScript?",
-    options: [
-      "Objects inherit properties from their prototype",
-      "Classes inherit properties from other classes",
-      "Variables inherit methods",
-      "Functions inherit properties from arrays"
-    ],
+    options: ["Variables inherit methods", "Objects inherit properties from their prototype", "Functions inherit properties from arrays", "Classes inherit properties from other classes"],
     answer: "Objects inherit properties from their prototype"
   },
   {
     question: "What is a closure and why is it useful?",
-    options: [
-      "A function that remembers its outer variables even after execution",
-      "A function that resets its variables",
-      "A method for cloning objects",
-      "An error-handling mechanism"
-    ],
+    options: ["A method for object cloning", "A function that resets its variables", "A function that remembers its outer variables even after execution", "An error handling mechanism"],
     answer: "A function that remembers its outer variables even after execution"
   },
   {
     question: "How do you optimize performance in a large-scale JavaScript application?",
-    options: [
-      "By minimizing DOM manipulation and using asynchronous techniques",
-      "By using global variables",
-      "By writing synchronous code only",
-      "By avoiding error handling"
-    ],
+    options: ["By avoiding error handling", "By using global variables", "By minimizing DOM manipulation and using asynchronous techniques", "By writing only synchronous code"],
     answer: "By minimizing DOM manipulation and using asynchronous techniques"
   },
   {
-    question: "What are Pure Functions in JavaScript?",
-    options: [
-      "Functions that do not have side effects and return the same output for the same input",
-      "Functions that modify global state",
-      "Functions that use async/await",
-      "Functions that rely on external data"
-    ],
+    question: "What are pure functions in JavaScript?",
+    options: ["Functions that use async/await", "Functions that do not have side effects and return the same output for the same input", "Functions that rely on external data", "Functions that modify global state"],
     answer: "Functions that do not have side effects and return the same output for the same input"
   },
   {
     question: "Explain the concept of 'this' in JavaScript.",
-    options: [
-      "It refers to the context in which a function is executed",
-      "It is always equal to the window object",
-      "It is used for mathematical operations",
-      "It is a constant variable"
-    ],
+    options: ["It is always equal to window", "It is used for mathematical operations", "It refers to the context in which a function is executed", "It is a constant variable"],
     answer: "It refers to the context in which a function is executed"
   },
   {
     question: "What is memoization in JavaScript?",
-    options: [
-      "An optimization technique to cache function results",
-      "A debugging process",
-      "A method to iterate over arrays",
-      "A way to bind functions"
-    ],
+    options: ["A way to bind functions", "A debugging process", "An optimization technique to cache function results", "A method to iterate over arrays"],
     answer: "An optimization technique to cache function results"
   },
   {
     question: "How do you handle errors in asynchronous code?",
-    options: [
-      "Using try/catch with async/await or .catch() with Promises",
-      "By ignoring the errors",
-      "By using console.log() only",
-      "By stopping the event loop"
-    ],
+    options: ["By using console.log() only", "Using try/catch with async/await or .catch() with Promises", "By ignoring errors", "By stopping the event loop"],
     answer: "Using try/catch with async/await or .catch() with Promises"
   },
   {
     question: "What is the significance of the 'use strict' directive?",
-    options: [
-      "It enforces stricter parsing and error handling in your code",
-      "It allows global variables",
-      "It automatically optimizes code",
-      "It disables error handling"
-    ],
+    options: ["It allows global variables", "It disables error handling", "It automatically optimizes code", "It enforces stricter parsing and error handling in your code"],
     answer: "It enforces stricter parsing and error handling in your code"
   }
 ];
+
+
 const allQuizzes = {
   jsBasicsQuiz,
   jsVariablesScopeQuiz,
